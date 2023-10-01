@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.collections.FXCollections?>
+<GridPane fx:id="mainBodySettings" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.gameproject.SettingsController" styleClass="gridPane">
+    <stylesheets>
+        <URL value="@../Settings/StyleSheet.css" />
+    </stylesheets>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <columnConstraints>
+        <ColumnConstraints percentWidth="20" halignment="CENTER"/>
+        <ColumnConstraints percentWidth="20" halignment="CENTER"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints valignment="CENTER"/>
+        <RowConstraints valignment="CENTER"/>
+        <RowConstraints valignment="CENTER"/>
+        <RowConstraints valignment="CENTER"/>
+        <RowConstraints valignment="CENTER"/>
+    </rowConstraints>
+    <Label text="Game Settings" fx:id="settingsText" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+    <Label text="UI Scale:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <ComboBox fx:id="uiButton" onAction="#uiChange" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Huge"/>
+                <String fx:value="Large"/>
+                <String fx:value="Medium"/>
+                <String fx:value="Small"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+    <Label text="Music Volume:" fx:id="volumeLabel" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <Slider fx:id="volumeSlider" GridPane.columnIndex="1" GridPane.rowIndex="2" max="0.7"/>
+    <Label text="Sfx Volume:" fx:id="sfxLabel" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <Slider fx:id="sfxSlider" GridPane.columnIndex="1" GridPane.rowIndex="3" max="0.7"/>
+    <Button text="Back" onAction="#backButton" fx:id="backButton" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="2"/>
+</GridPane>

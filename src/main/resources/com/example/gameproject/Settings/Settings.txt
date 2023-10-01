@@ -1,0 +1,3 @@
+Ui Scale: Large
+Music Volume: 0.04042550858030927
+Sfx Volume: 0.4234042725664504

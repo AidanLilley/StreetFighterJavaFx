@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.gameproject.SingleCharacterSelect"
+            prefHeight="400.0" prefWidth="600.0" fx:id="mainBodySCS">
+    <stylesheets>
+        <URL value="@../Settings/StyleSheet.css" />
+    </stylesheets>
+    <Label text="Select Your Character!" fx:id="SCSTitle"/>
+    <HBox fx:id="characterSelectBody">
+        <FlowPane fx:id="characterGrid">
+            <AnchorPane styleClass="red" fx:id="Josh"/>
+            <AnchorPane styleClass="red" fx:id="DanM"/>
+            <AnchorPane styleClass="red" fx:id="Nathan"/>
+            <AnchorPane styleClass="red" fx:id="Beth"/>
+            <AnchorPane styleClass="red" fx:id="DanF"/>
+            <AnchorPane styleClass="red" fx:id="Liz"/>
+            <AnchorPane styleClass="red" fx:id="James"/>
+            <AnchorPane styleClass="red" fx:id="Samiro"/>
+            <AnchorPane styleClass="red" fx:id="Realyn"/>
+        </FlowPane>
+        <VBox fx:id="characterView">
+            <AnchorPane fx:id="characterPage"/>
+            <Label text="Name: --" fx:id="cpName" styleClass="redText"/>
+            <Label text="Health: --" fx:id="cpHealth" styleClass="redText"/>
+            <Label text="Damage: --" fx:id="cpDamage" styleClass="redText"/>
+            <Label text="Speed: --" fx:id="cpSpeed" styleClass="redText"/>
+            <Button text="Select Character" fx:id="selectChar" onAction="#toArenaSelect"/>
+        </VBox>
+    </HBox>
+    <Button text="Back" onAction="#backButton"/>
+</VBox>

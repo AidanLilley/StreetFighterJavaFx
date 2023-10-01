@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.gameproject.GameStageController"
+            prefHeight="400.0" prefWidth="600.0" fx:id="GameStageBody">
+    <Label fx:id="playerTitle"/>
+    <Text fx:id="npcTitle1"/>
+    <Rectangle fx:id="barContain"/>
+    <Rectangle fx:id="barRec"/>
+    <Rectangle fx:id="healthRec"/>
+    <AnchorPane fx:id="heartIcon"/>
+    <Rectangle fx:id="barContain2"/>
+    <Rectangle fx:id="barRec2"/>
+    <Rectangle fx:id="healthRec2"/>
+    <AnchorPane fx:id="heartIcon2"/>
+    <ImageView fx:id="sprite" pickOnBounds="true"/>
+    <ImageView fx:id="npc" pickOnBounds="true"/>
+    <Rectangle fx:id="rec"/>
+
+</AnchorPane>

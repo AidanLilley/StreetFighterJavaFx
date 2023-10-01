@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.gameproject.MultiplayerGameSelect"
+      prefHeight="400.0" prefWidth="600.0" fx:id="MultiplayerSelectMainBody">
+    <stylesheets>
+        <URL value="@../Settings/StyleSheet.css" />
+    </stylesheets>
+    <Label text="" fx:id="warning"/>
+    <FlowPane fx:id="MultiplayerCharGrid">
+        <AnchorPane styleClass="red" fx:id="Josh"/>
+        <AnchorPane styleClass="red" fx:id="DanM"/>
+        <AnchorPane styleClass="red" fx:id="Nathan"/>
+        <AnchorPane styleClass="red" fx:id="Beth"/>
+        <AnchorPane styleClass="red" fx:id="DanF"/>
+        <AnchorPane styleClass="red" fx:id="Liz"/>
+        <AnchorPane styleClass="red" fx:id="James"/>
+        <AnchorPane styleClass="red" fx:id="Samiro"/>
+        <AnchorPane styleClass="red" fx:id="Realyn"/>
+    </FlowPane >
+    <HBox fx:id="bottomScreen">
+        <VBox fx:id="ownCharView">
+            <AnchorPane fx:id="MPcharacterPage"/>
+            <Label text="Name: --" fx:id="mcpName" styleClass="redText"/>
+            <Label text="Health: --" fx:id="mcpHealth" styleClass="redText"/>
+            <Label text="Damage: --" fx:id="mcpDamage" styleClass="redText"/>
+            <Label text="Speed: --" fx:id="mcpSpeed" styleClass="redText"/>
+        </VBox>
+        <HBox fx:id="arenaSelector">
+            <Button onAction="#carouselPrev" styleClass="stretch" fx:id="carouselBack"/>
+            <AnchorPane fx:id="arenaView"/>
+            <Button onAction="#carouselNext" styleClass="stretch" fx:id="carouselForward"/>
+        </HBox>
+        <VBox fx:id="enemyCharView">
+            <AnchorPane fx:id="MPcharacterPageEnemy"/>
+            <Label text="Name: --" fx:id="mcpNameEnemy" styleClass="redText"/>
+            <Label text="Health: --" fx:id="mcpHealthEnemy" styleClass="redText"/>
+            <Label text="Damage: --" fx:id="mcpDamageEnemy" styleClass="redText"/>
+            <Label text="Speed: --" fx:id="mcpSpeedEnemy" styleClass="redText"/>
+        </VBox>
+    </HBox>
+    <HBox>
+        <Button text="Start Game" onAction="#startBattle"/>
+        <Button text="Back" onAction="#backButton"/>
+    </HBox>
+
+</VBox>

@@ -1,0 +1,183 @@
+/*Main Page Style*/
+
+#welcomeText {
+
+}
+
+#mainBody {
+    -fx-alignment: top-center;
+    -fx-background-image: url("../Images/BackgroundScreen.jpg");
+    -fx-background-size: 100%;
+}
+
+/*Settings Page Style*/
+
+#mainBodySettings {
+
+    -fx-background-image: url("../Images/BackgroundScreen.jpg");
+    -fx-background-size: 100%;
+    -fx-alignment: top-center;
+}
+#backButton {
+
+}
+#grid {
+
+}
+
+#uiButton {
+}
+/*Character Select 1 Player*/
+#mainBodySCS {
+    -fx-alignment: top-center;
+    -fx-background-image: url("../Images/BackgroundScreen.jpg");
+    -fx-background-size: 100%;
+    -fx-grid-lines-visible: true;
+    -fx-text-alignment: center;
+}
+#SCSTitle {
+    -fx-text-alignment: center;
+}
+#characterSelectBody {
+    -fx-alignment: center;
+}
+#characterGrid {
+    -fx-alignment: top-center;
+    -fx-border-style: solid inside;
+    -fx-border-width: 2;
+    -fx-border-insets: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: blue;
+    -fx-vgap: 15;
+    -fx-hgap: 15;
+}
+#characterView {
+    -fx-alignment: center;
+    -fx-border-style: solid inside;
+    -fx-border-width: 2;
+    -fx-border-insets: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: blue;
+}
+#characterPage {
+    -fx-border-style: solid inside;
+    -fx-border-width: 2;
+    -fx-pref-height: 0;
+    -fx-background-size: stretch;
+}
+
+.red {
+    -fx-background-color: red;
+    -fx-pref-height: 150;
+    -fx-pref-width: 150;
+    -fx-background-size: stretch;
+}
+
+.redText {
+    -fx-text-fill: red;
+}
+.stretch {
+    -fx-background-size: stretch;
+    -fx-text-alignment: center;
+}
+/*Arena Select 1 Player*/
+#mainBodySAS {
+    -fx-alignment: top-center;
+    -fx-background-image: url("../Images/BackgroundScreen.jpg");
+    -fx-background-size: stretch;
+    -fx-grid-lines-visible: true;
+    -fx-text-alignment: center;
+}
+#SASTitle {
+    -fx-text-alignment: center;
+}
+#arenaSelectBody {
+    -fx-alignment: center;
+}
+#arenaGrid {
+    -fx-alignment: top-center;
+    -fx-border-style: solid inside;
+    -fx-border-width: 2;
+    -fx-border-insets: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: blue;
+}
+#arenaView {
+    -fx-alignment: center;
+    -fx-border-style: solid inside;
+    -fx-border-width: 2;
+    -fx-border-insets: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: blue;
+}
+#arenaPage {
+    -fx-border-style: solid inside;
+    -fx-border-width: 2;
+    -fx-pref-height: 0;
+    -fx-background-size: stretch;
+}
+#GameStageBody {
+    -fx-background-size: stretch;
+}
+
+/*Game Finder 2 Player*/
+#GameFinderMainBody {
+    -fx-alignment: center;
+    -fx-background-image: url("../Images/BackgroundScreen.jpg");
+    -fx-background-size: 100%;
+    -fx-text-alignment: center;
+}
+#GameFinderOptionsBar {
+    -fx-alignment: top-center;
+    -fx-text-alignment: center;
+}
+#GameFinderGamesView {
+    -fx-padding: 20;
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+    -fx-border-style: solid inside;
+    -fx-border-width: 2;
+    -fx-border-insets: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: blue;
+}
+/*Game Select MP*/
+#MultiplayerSelectMainBody {
+    -fx-alignment: center;
+    -fx-background-image: url("../Images/BackgroundScreen.jpg");
+    -fx-background-size: 100%;
+    -fx-text-alignment: center;
+}
+#MultiplayerCharGrid {
+    -fx-alignment: top-center;
+    -fx-border-style: solid inside;
+    -fx-border-width: 2;
+    -fx-border-insets: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: blue;
+    -fx-vgap: 15;
+    -fx-hgap: 15;
+}
+#bottomScreen {
+    -fx-alignment: center;
+}
+#arenaSelector {
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+    -fx-border-width: 0;
+}
+#arenaView {
+    -fx-border-width: 0;
+    -fx-background-size: stretch;
+}
+#carouselBack {
+    -fx-background-image: url("../Images/backbuttoncircle_79559.png");
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+#carouselForward {
+    -fx-background-image: url("../Images/img.png");
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+

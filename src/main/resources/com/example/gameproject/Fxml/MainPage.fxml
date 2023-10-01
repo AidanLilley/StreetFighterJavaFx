@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import java.net.URL?>
+<VBox fx:id="mainBody" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.gameproject.mainPageController" prefHeight="400" prefWidth="600">
+    <stylesheets>
+        <URL value="@../Settings/StyleSheet.css" />
+    </stylesheets>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <Label text="Welcome to Generic Adventure Game!" fx:id="welcomeText"/>
+    <Button text="Single Player" onAction="#SinglePlayerButton" fx:id="newGame"/>
+    <Button text="Multiplayer" onAction="#MultiplayerButton" fx:id="loadGame"/>
+    <Button text="Settings" onAction="#settingsButton" fx:id="settings"/>
+    <Button text="Exit Game" onAction="#exitButton" fx:id="exitGame"/>
+</VBox>
